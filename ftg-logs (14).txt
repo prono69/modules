@@ -1,0 +1,35 @@
+ERROR:root:Command failed
+Traceback (most recent call last):
+  File "/home/ftg/friendly-telegram/main.py", line 129, in handle_command
+    await coro
+  File "<string>", line 53, in download
+  File "<string>", line 60, in git_commit
+  File "/usr/lib/python3.7/codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x98 in position 4: invalid start byte
+ERROR:telethon.client.updates:Unhandled exception on functools.partial(<function handle_command at 0x7fd025540bf8>, <friendly-telegram.loader.Modules object at 0x7fcffa770748>, <friendly-telegram.database.frontend.Database object at 0x7fd0211e7c88>)
+Traceback (most recent call last):
+  File "/home/ftg/friendly-telegram/main.py", line 135, in handle_command
+    + "with the logs (`.logs error`)</code>")
+  File "/home/eren/.local/lib/python3.7/site-packages/telethon/tl/custom/message.py", line 728, in edit
+    *args, **kwargs
+  File "/home/eren/.local/lib/python3.7/site-packages/telethon/client/messages.py", line 1034, in edit_message
+    msg = self._get_response_message(request, await self(request), entity)
+  File "/home/eren/.local/lib/python3.7/site-packages/telethon/client/users.py", line 74, in __call__
+    result = await future
+telethon.errors.rpcerrorlist.MessageIdInvalidError: The specified message ID is invalid or you can't do that operation on such message (caused by EditMessageRequest)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eren/.local/lib/python3.7/site-packages/telethon/client/updates.py", line 422, in _dispatch_update
+    await callback(event)
+  File "/home/ftg/friendly-telegram/main.py", line 137, in handle_command
+    raise e
+  File "/home/ftg/friendly-telegram/main.py", line 129, in handle_command
+    await coro
+  File "<string>", line 53, in download
+  File "<string>", line 60, in git_commit
+  File "/usr/lib/python3.7/codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x98 in position 4: invalid start byte
