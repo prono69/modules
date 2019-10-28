@@ -1,0 +1,11 @@
+ERROR:friendly-telegram.modules.loader:Loading external module failed.
+Traceback (most recent call last):
+  File "/home/ftg/friendly-telegram/modules/loader.py", line 173, in load_module
+    module.__spec__.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "/home/ftg/friendly-telegram/modules/loader.py", line 52, in get_code
+    return compile(source, self.origin, 'exec', dont_inherit=True)
+  File "<string>", line 86
+    await mone.edit("Cannot Upload Plugin")
+                                          ^
+TabError: inconsistent use of tabs and spaces in indentation
