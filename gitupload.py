@@ -53,7 +53,7 @@ async def download(event):
 		try:
 			await git_commit(downloaded_file_name,mone)
 		except:
-			await mone.edit("<code> Please reply to a python module</code>")
+			await mone.edit("`Please reply to a python module`")
 
 async def git_commit(file_name,mone):        
 	content_list = []
