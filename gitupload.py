@@ -82,7 +82,7 @@ async def git_commit(file_name,mone):
 		try:
 			link =  "https://github.com/" + Config.GIT_REPO_NAME + "/blob/master/" + file_name
 			rawlink = "https://raw.githubusercontent.com/" + Config.GIT_REPO_NAME + "/master/" + file_name
-			await mone.edit("<code>Committed on Your Github Repo.</code>\n\nLink: <code>" + link + "</code>\n\nRAW Link: <code>" + rawlink + "</code>")
+			await mone.edit("`Committed on Your Github Repo.`\n\nLink: `" + link + "`\n\nRAW Link: `" + rawlink + "`")
 		except:
 			print("Cannot Create Plugin")
 			await mone.edit("Cannot Upload Plugin")
